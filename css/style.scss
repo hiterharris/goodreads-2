@@ -165,6 +165,7 @@ nav {
   }
   p {
     margin:5%;
+    font-family: 'lato', sans-serif;
   }
 }
 
@@ -187,5 +188,107 @@ article {
   .book-cover {
     width:65%;
     margin:8%;
+  }
+}
+
+@media (max-width:769px) {
+
+  .nav-left, .nav-center, .nav-right {
+    display:block;
+  }
+
+  .nav-left {
+    margin:0 auto;
+    padding:0;
+
+    .logo {
+      text-align: center;
+    }
+  }
+  .nav-center {
+    margin:0 auto;
+    padding:0;
+
+    .search-button {
+      margin-left:35%;
+    }
+  }
+  .nav-right {
+    float:right;
+
+    .icons {
+      display:none;
+    }
+  }
+
+  .my-books {
+    width:20%;
+  }
+
+  .top-reads {
+    display:none;
+  }
+
+  .feed {
+    width:75%;
+
+    .content-img {
+      width:20%;
+    }
+    p {
+      width:40%;
+      padding-left:5px;
+    }
+
+  }
+}
+
+
+@media (max-width:400px) {
+
+  .nav-menu .menu-items {
+    margin: 12px 12px 0px 12px;
+
+    li {
+      margin: 0px 30px 10px 30px;
+    }
+  }
+
+  .my-books {
+    display:none;
+  }
+
+  .feed {
+    width:100%;
+    .my-feed {
+      padding-left: 50px;
+    }
+  }
+
+  .feed h2 {
+    padding:0;
+  }
+
+  .post-one .post-head p {
+    float: left;
+  }
+
+  .post-one {
+  }
+
+  .post-content {
+
+    img {
+      width:25%;
+    }
+
+    p {
+      width:50%;
+      line-height: 1em !important;
+    }
+
+    .hh-killinglincoln, .hh-thelittleprince, .hh-odyssey, .hh-killingkennedy {
+      padding-top:40px;
+    }
   }
 }
